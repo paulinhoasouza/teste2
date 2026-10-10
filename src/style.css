@@ -11,3 +11,62 @@
 @media (max-width:720px){.sidebar{transform:translateX(-110%);transition:transform .25s ease;width:250px}.sidebar.sidebar-open{transform:translateX(0)}.mobile-shade{position:fixed;inset:0;background:#1016249c;z-index:20}.mobile-menu,.mobile-close{display:grid}.mobile-close{color:white}.sidebar-top{display:flex;justify-content:space-between}.main-wrapper{margin:0;width:100%}.topbar{height:64px;min-height:64px;padding:0 20px}.content{padding:28px 17px 8px}.page-heading{align-items:flex-start;flex-direction:column;margin-bottom:22px}.page-heading h1{font-size:26px}.page-action,.page-action>.btn{width:100%}.metrics-grid{gap:11px}.metric-card{padding:16px}.metric-value{font-size:22px}.metric-label{font-size:11px}.metric-helper{font-size:10px}.chart-panel,.panel-side{padding:20px}.table-toolbar{align-items:flex-start;flex-direction:column}.searchbox{min-width:0;width:100%}.toolbar-left{width:100%}.date-fields,.filter-panel{flex-wrap:wrap;justify-content:flex-start}.login-page{display:block}.login-art{display:none}.login-main{min-height:100vh;padding:32px 25px}.login-mobile-brand{display:block;position:absolute;left:25px;top:27px}.login-mobile-brand .brand-name{color:#263348}.login-box{margin-top:70px}.modal-backdrop{padding:8px;align-items:flex-start}.modal{max-height:calc(100dvh - 16px)}.modal-heading{padding:18px 17px}.modal-body{padding:20px 17px}.form-grid{grid-template-columns:1fr}.form-footer{align-items:stretch;flex-direction:column}.form-footer>div:last-child{width:100%}.form-footer .button-group .btn{flex:1}.preview-toolbar{flex-direction:column;align-items:stretch}.preview-toolbar .btn{width:100%}.proposal-preview{padding:8px}.proposal-preview #proposal-print{min-width:560px}.filter-label{flex-wrap:wrap}.top-right{gap:9px}.top-left{gap:8px}}
 @media (max-width:400px){.metrics-grid{grid-template-columns:1fr}.metric-card{padding:17px}.metric-value{font-size:25px}}
 @media print{body{background:white!important}body *{visibility:hidden!important}.modal-backdrop,#proposal-print,#proposal-print *{visibility:visible!important}#proposal-print{position:fixed;inset:0 auto auto 0;background:white!important;box-shadow:none!important;width:100%!important;max-width:none!important;min-height:0!important;padding:12mm 15mm!important;font-size:11pt!important}.modal-backdrop{position:static!important;display:block!important;padding:0!important;background:white!important}.modal,.modal-body{max-height:none!important;overflow:visible!important;box-shadow:none!important;padding:0!important}.proposal-preview{overflow:visible!important;padding:0!important;background:white!important;border:0!important}.toast{display:none!important}@page{size:A4;margin:0}}
+
+/* ZettaMinds — identidade azul, violeta e vermelho */
+:root{--brand-blue:#124be8;--brand-purple:#7125c4;--brand-red:#e51e4a;--brand-gradient:linear-gradient(112deg,#1553ef 0%,#6d25c6 51%,#ef234b 100%)}
+body{background:#f7f8fd}
+.brand{gap:9px}.brand-emblem{width:42px;height:42px;object-fit:contain;flex-shrink:0}
+.brand-name{font-weight:800;font-size:23px;letter-spacing:-1.25px;color:#fff}.brand-name span:not(.brand-dot){color:#b79cff}.brand-dot{color:#ef3152!important}
+.login-page .brand-name,.setup-screen .brand-name,.blocked .brand-name{color:#151b31}
+.login-page .brand-name span:not(.brand-dot),.setup-screen .brand-name span:not(.brand-dot),.blocked .brand-name span:not(.brand-dot){color:#7125c4}
+.sidebar{background:#111a33}.sidebar .nav-item.active{background:linear-gradient(90deg,#1a3d88,#32225e)}
+.nav-glow{background:var(--brand-gradient)}.sidebar .nav-item.active svg{color:#a9a0ff}
+.sidebar-help{background:linear-gradient(143deg,#183b85,#432175 80%,#5d244d);border-color:#454078}
+.help-ico{background:#ffffff1d;color:#ddd0ff}
+.eyebrow,.inline-link,.side-callout button{color:#662bc0}
+.btn-primary{background:var(--brand-gradient);border-color:transparent;box-shadow:0 5px 16px #7133bd30}
+.btn-primary:hover{background:linear-gradient(108deg,#0e41d7,#5a1aaa,#cf123a);box-shadow:0 6px 20px #7133bd40}
+input:focus,textarea:focus,select:focus{outline:2px solid #9c8af8;outline-offset:0;border-color:#734bd5!important}
+button:focus-visible{outline:3px solid #9183eb}
+.login-art{background:linear-gradient(135deg,#111e4b,#282063 51%,#631e5c 87%,#961f47)}
+.login-art .brand-name{color:#fff}.login-art .brand-name span:not(.brand-dot){color:#b7adff}
+.login-art .brand-emblem{filter:drop-shadow(0 2px 3px #0002)}
+.brand-symbol{display:none}.heading-period,.brand-dot{color:#e72b58}
+.user-avatar,.top-avatar{background:linear-gradient(135deg,#1d53ee,#8c25bb,#e32a5d);color:white}
+.progress i{background:var(--brand-gradient)!important}
+.badge-dot{background:currentColor}
+.time-dashboard{padding:24px 25px;margin-bottom:22px}
+.time-dashboard .panel-title{align-items:center}
+.time-tabs{display:flex;padding:4px;gap:4px;border-radius:12px;background:#f1effb}
+.time-tabs button{border:0;background:transparent;color:#62667b;border-radius:8px;padding:9px 13px;font-size:12px;font-weight:750}
+.time-tabs button.selected{background:#fff;color:#5829b4;box-shadow:0 2px 8px #100a2a14}
+.time-legend{display:flex;flex-wrap:wrap;gap:10px 15px;margin:22px 0 10px}
+.time-legend span{display:flex;align-items:center;gap:5px;font-size:11px;color:#778398}
+.time-legend i,.kanban-column header i{display:inline-block;width:9px;height:9px;border-radius:50%}
+.time-legend b{color:#273449}.time-chart{width:100%;height:310px}
+.kanban-toolbar{display:flex;align-items:center;gap:10px;padding:12px 17px;margin-bottom:18px;background:#fff;border:1px solid #eaecf3;border-radius:12px}
+.kanban-toolbar input{min-width:0;width:min(430px,100%);border:0;outline:0!important;color:#202a40;background:transparent;font-size:13px}
+.kanban-toolbar small{margin-left:auto;color:#9aa5b3;white-space:nowrap}
+.kanban-board{display:flex;gap:15px;align-items:stretch;overflow-x:auto;padding:0 2px 20px;scroll-snap-type:x proximity}
+.kanban-column{flex:0 0 278px;min-height:420px;background:#f1f3f9;border-radius:15px;border:1px solid #e8eaf4;scroll-snap-align:start}
+.kanban-column header{display:flex;align-items:center;gap:9px;padding:17px 14px 13px;font-size:12px;color:#303c52}
+.kanban-column header strong{flex:1}.kanban-column header span{background:#fff;border:1px solid #e8eaf1;padding:2px 8px;border-radius:11px;color:#6d778b;font-size:11px}
+.kanban-stack{padding:0 10px 14px;display:flex;flex-direction:column;gap:10px}
+.kanban-card{background:#fff;border:1px solid #e8ebf4;border-radius:12px;padding:14px 14px 13px;box-shadow:0 4px 15px #1724490a;cursor:grab;transition:transform .2s,box-shadow .2s}
+.kanban-card:active{cursor:grabbing}.kanban-card:hover{box-shadow:0 6px 21px #17244918;transform:translateY(-1px)}
+.kanban-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
+.kanban-top>span{font-size:10px;font-weight:800;color:#6a3bb7;background:#f2eefe;padding:5px 7px;border-radius:6px}
+.kanban-top button{border:0;background:transparent;color:#8791a5;padding:4px}
+.kanban-name{border:0;background:transparent;text-align:left;padding:0;font-size:13px;line-height:1.45;font-weight:800;color:#202d43;width:100%;white-space:normal}
+.kanban-name:hover{color:#602bbb}.kanban-client,.kanban-meta span{display:flex;align-items:center;gap:5px}
+.kanban-client{color:#818da0;font-size:11px;margin-top:10px}
+.kanban-money{font:800 18px Manrope,sans-serif;letter-spacing:-.6px;color:#1c2d4a;margin:17px 0 12px}
+.kanban-meta{display:flex;flex-wrap:wrap;gap:9px;color:#8c97a8;font-size:10px;padding-bottom:13px;border-bottom:1px solid #edf0f6}
+.kanban-card select{margin-top:12px;border:1px solid #e4e7f0;background:#fafbff;border-radius:8px;padding:8px;width:100%;font-size:11px;color:#4c566d}
+.kanban-empty{padding:25px 12px;text-align:center;font-size:11px;color:#a0a8b6;border:1px dashed #d5daea;border-radius:10px;background:#fff9}
+.kanban-note{font-size:11px;color:#8b97aa;margin-top:12px;line-height:1.55}
+@media(max-width:760px){
+ .time-dashboard{padding:18px 14px}.time-dashboard .panel-title{align-items:flex-start;flex-direction:column}.time-tabs{width:100%}.time-tabs button{flex:1}
+ .time-chart{height:290px}.kanban-column{flex-basis:min(82vw,298px)}.kanban-toolbar small{display:none}
+ .brand-emblem{width:34px;height:34px}.brand-name{font-size:21px}
+}
